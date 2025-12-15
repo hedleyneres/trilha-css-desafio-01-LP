@@ -1,89 +1,184 @@
+/*Configurações gerais*/
+@import url(./global.css);
 *{
     padding: 0;
     margin: 0;
 }
-.banner-content{
-    width: 100%;
-    height: 450px;
-    background-color:#000000;
-    color: #ffffff;
-    background-image: url('./assets/images/banner.png');
+
+boddy{background-color: #000000;}
+/*Configurações personalizadas*/
+.banner{
+    background-color: #000000;
+    background-image: linear-gradient( rgba(0, 0, 0, .8), rgba(51, 168, 219, .3), rgba(0, 0, 0, .8)), url('./assets/images/banner.png');
     background-repeat: no-repeat;
     background-size: cover;
-    border-bottom:  4px solid #33A8DB;
-    align-content: center;
+    height: 600px;
+    border-bottom:  1px solid #33A8DB;
+    display: flex;
+    justify-content: center;
 }
+.banner .banner-content{
+    color: #ffffff;
+    width: 600px;
+    margin: auto;
+    text-align: center;
+}
+
 .logo{
     display: flex;
     justify-content: center;
 }
 
 #txt-cabeçalho{
-    text-align: center;    
+    color: #ffffff;
+    background-image: linear-gradient( top, #67cdf8 #33A8DB);
+    color: transparent;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 h1{
+    font-weight: 900;
+    font-size: 40px;
+    color: transparent;
+    background: -webkit-linear-gradient(#33A8DB, #1472B7);
+    background-clip: text;
     text-transform: uppercase;}
 p{
-    margin-top: 8px;}
-
-button{
     color: #ffffff;
-    background-color: transparent;
-    margin-top: 14px;
-    padding: 4px 8px;
-    border: solid 1px, #33A8DB;
+    font-weight: normal;
+    font-size: 17px;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
+button{ /* FORMA CORRETA */
+  color: #31A8DD;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 16px 32px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  background-color: transparent;
+  border-image: linear-gradient(#3BA1CD, #1572B7);
+  border-image-slice: 10;
+  border-radius: 30px;
+  }
 
 #course-content{
-    align-content: center;
-    text-align: center;
-    height: 350px;
+    height: 530px;
     background-color: #000000;
     color: #ffffff;
+    align-content: center;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-h2{text-transform: uppercase;}
+h2{
+    margin: 0 auto 24px;
+    text-transform: uppercase;}
 .txtb2{
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin: 0 auto 24px;
 }
 
 .module01{
-    margin: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding-top: 3px;
-    padding-bottom: 3px;
+    margin: 0 auto 24px;
+    padding-top: 7px;
     width: 450px;
-    height: 19px;
+    height: 27px;
     background-color: #252525;
     justify-content: center;
     border:solid 1px #33A8DB;
-    border-radius: 15px;}
+    border-radius: 13px;
+    box-shadow: inset 1px 3px 5px 2px #040b10;
+    font-size: 16px;}
 .module02{
-        margin: auto;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        padding-top: 3px;
-        padding-bottom: 3px;
+        margin: 0 auto 24px;
+        padding-top: 7px;
         width: 450px;
-        height: 19px;
+        height: 27px;
         background-color: #252525;
+        font-size: 13px;
         justify-content: center;
         border:solid 1px #33A8DB;
-        border-radius: 15px;}
+        border-radius: 15px;
+        box-shadow: inset 1px 3px 5px 2px #040b10;}
 .module03{
-        margin: auto;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        padding-top: 3px;
-        padding-bottom: 3px;
+        margin: 0 auto 24px;
+        padding-top: 7px;
         width: 450px;
-        height: 19px;
+        height: 27px;
         background-color: #252525;
+        font-size: 13px;
         justify-content: center;
         border:solid 1px #33A8DB;
-        border-radius: 15px;}
-
+        border-radius: 15px;
+        box-shadow: inset 1px 3px 5px 2px #040b10;}
 .cor-azul-txt{
     color: #33A8DB;}
+
+#transform-world{
+    color: #ffffff;
+    height: 363px;/*altura*/
+    border-style: solid;/*borda sólida*/
+    border-width: 1px 0px;/*bordas (cima e baixo)*/
+    border-color: #33A8DB;
+    background-color: #000000;
+    background-image: url('./assets/images/woman-code.png');
+    background-size: cover;/*faz a imagem preenxher todo espaço*/
+    background-position: center; /*centraliza  a imagem*/
+    background-attachment: fixed; /*deixa a imagem fixada*/
+    display: flex;
+    align-items: center;}
+.txt-transforme{
+    text-transform: lowercase;/*deixa tudo minúsculo*/
+    font-size: 40px;/*tamanho da fonte*/
+    margin: 111px;
+    font-weight: 900;
+    text-shadow: 3px 2px         #33A8DB;
+}
+
+#professional-challenges{
+    background-color: #000000;
+    color: #33A8DB;
+    display: flex;
+    flex-direction: column; /*força os itens um abaixo do outro*/
+    align-items: center;/*centraliza horizontalmente*/}
+
+h2{
+    padding-top: 30px;
+    text-align: center;
+    font-weight: 300;
+    font-size: 32px;
+    font-weight: 600;
+    margin-top: 20px;}
+
+.txt-de-apoio{
+    color: #ffffff;
+    text-align: center;
+    max-width: 650px;
+    padding-bottom: 30px;
+    font-size: 13px;
+    margin-bottom: 20px;
+
+}
+
+.footer{
+    color: #ffffff;
+    background-color: #000000;
+    background-image: linear-gradient(black, rgba(51, 168, 219, .25));
+    height:170px;
+    border: solid; 
+    border-color: #33A8DB;
+    border-width: 1px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /*Centraliza verticalmente*/
+    align-items: center;   
+}
+.acesse-link{
+    color: #33A8DB;
+    text-decoration: none;
+    font-weight: bold;}
