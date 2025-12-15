@@ -91,7 +91,7 @@ h2{
     background-color: #252525;
     justify-content: center;
     border:solid 1px #33A8DB;
-    border-radius: 13px;
+    border-radius: 15px;
     box-shadow: inset 1px 3px 5px 2px #040b10;
     font-size: 16px;}
 .module02{
@@ -104,7 +104,8 @@ h2{
         justify-content: center;
         border:solid 1px #33A8DB;
         border-radius: 15px;
-        box-shadow: inset 1px 3px 5px 2px #040b10;}
+        box-shadow: inset 1px 3px 5px 2px #040b10;
+    font-size: 16px;}
 .module03{
         margin: 0 auto 24px;
         padding-top: 7px;
@@ -115,7 +116,8 @@ h2{
         justify-content: center;
         border:solid 1px #33A8DB;
         border-radius: 15px;
-        box-shadow: inset 1px 3px 5px 2px #040b10;}
+        box-shadow: inset 1px 3px 5px 2px #040b10;
+        font-size: 16px;}
 .cor-azul-txt{
     color: #33A8DB;}
 
